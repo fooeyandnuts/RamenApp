@@ -11,5 +11,5 @@ class Ramen
   field :spicy_miso, type: Mongoid::Boolean
   field :extra_pork, type: Mongoid::Boolean
 
-# belongs_to :customer
+belongs_to :customer
 end

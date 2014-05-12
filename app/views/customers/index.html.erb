@@ -6,10 +6,8 @@
 		</li>
 		<li><%= c.phone %>
 		</li>
-		<%= link_to "Edit", edit_customer_path(c) %>
 		<%= link_to "Info", customer_path(c) %>
-		<%= link_to "Delete", c, {method: :delete, confirm: "Are you sure you want to delete?"} %>
-		<%= link_to "New Order", new_ramen_path(customer:c.id) %>
+		<%= link_to "New Order", new_customer_ramen_path(c) %>
 		<br>
 		<% end %>
 	</ul>
