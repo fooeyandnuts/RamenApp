@@ -38,7 +38,7 @@
 						<li>Extra Pork</li>
 					<% end %>
 					<li><%= link_to "Edit Bowl", edit_customer_ramen_path(@customer, r) %></li>
-					<li><%= link_to "Delete Bowl", [@customer, r], {method: :delete, confirm: "Are you sure you want to delete?"} %></li>
+					# <li><%= link_to "Delete Bowl", [@customer, r], {method: :delete, flash.now[:warning] = 'This is permanent'} %></li>
 					
 				</ul>
 			<% end %>
